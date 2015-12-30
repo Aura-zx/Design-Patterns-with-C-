@@ -6,3 +6,13 @@ The book use java, I made a c++ version.
 >SimUDuck.h <br>
 >>FlyBehavior.h <br>
 >>QuackBehavior.h <br>
+
+###2 Observer  
+>H_Observer.h <br>
+>>Subject.h <br>
+>>>WeatherData.h <br>
+
+>>Observer.h <br>
+>>DisplayElement.h <br>
+>>>CurrentConditionsDisplay.h <br>
+>>>StatisticsDisplay.h <br>
