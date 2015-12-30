@@ -3,14 +3,12 @@
 
 #include "stdafx.h"
 #include "DesignPattern.h"
-#include "SimUDuck.h"
-
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	Strategy s1 = Strategy( );
-	s1.test( );
-
+	Observer_d ob;
+	ob.test( );
+	ob.test2( );
 	return 0;
 }
 
