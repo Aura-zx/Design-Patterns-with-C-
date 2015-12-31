@@ -16,3 +16,7 @@ The book use java, I made a c++ version.
 >>DisplayElement.h <br>
 >>>CurrentConditionsDisplay.h <br>
 >>>StatisticsDisplay.h <br>
+
+###3 Decorator
+>Beverage.h <br>
+>CondimentDecorator.h <br>
