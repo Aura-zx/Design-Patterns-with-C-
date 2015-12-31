@@ -19,8 +19,11 @@
     <Filter Include="Source Files\Observer">
       <UniqueIdentifier>{3a52e694-c1df-41c3-982b-72047b5239a8}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Decorate">
+    <Filter Include="Source Files\Decorator">
       <UniqueIdentifier>{2e2c34bc-0361-4802-b551-1bb39acc593c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AbstractFactory">
+      <UniqueIdentifier>{b36b2d66-d044-46ec-aab6-5ed774e0744e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -67,13 +70,31 @@
       <Filter>Source Files\Observer</Filter>
     </ClInclude>
     <ClInclude Include="Decorate.h">
-      <Filter>Source Files\Decorate</Filter>
+      <Filter>Source Files\Decorator</Filter>
     </ClInclude>
     <ClInclude Include="Beverage.h">
-      <Filter>Source Files\Decorate</Filter>
+      <Filter>Source Files\Decorator</Filter>
     </ClInclude>
     <ClInclude Include="CondimentDecorator.h">
-      <Filter>Source Files\Decorate</Filter>
+      <Filter>Source Files\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractFactory.h">
+      <Filter>Source Files\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="Pizza.h">
+      <Filter>Source Files\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="PizzaStore.h">
+      <Filter>Source Files\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="NYPizzaStore.h">
+      <Filter>Source Files\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="PizzaStyle.h">
+      <Filter>Source Files\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="ChPizzaStore.h">
+      <Filter>Source Files\AbstractFactory</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

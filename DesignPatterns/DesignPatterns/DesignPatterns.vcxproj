@@ -79,7 +79,9 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AbstractFactory.h" />
     <ClInclude Include="Beverage.h" />
+    <ClInclude Include="ChPizzaStore.h" />
     <ClInclude Include="CondimentDecorator.h" />
     <ClInclude Include="CurrentConditionsDisplay.h" />
     <ClInclude Include="Decorate.h" />
@@ -87,7 +89,11 @@
     <ClInclude Include="DisplayElement.h" />
     <ClInclude Include="FlyBehavior.h" />
     <ClInclude Include="H_Observer.h" />
+    <ClInclude Include="NYPizzaStore.h" />
+    <ClInclude Include="PizzaStyle.h" />
     <ClInclude Include="Observer.h" />
+    <ClInclude Include="Pizza.h" />
+    <ClInclude Include="PizzaStore.h" />
     <ClInclude Include="QuackBehavior.h" />
     <ClInclude Include="SimUDuck.h" />
     <ClInclude Include="StatisticsDisplay.h" />

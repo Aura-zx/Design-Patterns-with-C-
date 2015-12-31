@@ -6,8 +6,8 @@
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	Decorator d1;
-	d1.test( );
+	AbstractFactory a;
+	a.test( );
 	return 0;
 }
 

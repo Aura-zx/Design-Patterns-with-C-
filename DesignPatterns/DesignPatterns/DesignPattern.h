@@ -4,24 +4,17 @@
 #include "SimUDuck.h"
 #include "H_Observer.h"
 #include "Decorate.h"
+#include "AbstractFactory.h"
 class DesignPattern
 {
 public:
-	DesignPattern( );
-	~DesignPattern( );
+	DesignPattern( ) {}
+	~DesignPattern() {}
 
 	virtual void test( ) = 0;
 private:
 
 };
-
-DesignPattern::DesignPattern( )
-{
-}
-
-DesignPattern::~DesignPattern( )
-{
-}
 
 class Strategy :public DesignPattern
 {
@@ -68,7 +61,7 @@ public:
 	}
 };
 
-class Decorator
+class Decorator : public DesignPattern
 {
 public:
 	void test( )
@@ -90,6 +83,23 @@ public:
 		beverage3 = std::make_shared<Mocha>(beverage3);
 		beverage3 = std::make_shared<Whip>(beverage3);
 		std::cout << beverage3->getDescription() + " $" + std::to_string(beverage3->cost( )) << std::endl;
+	}
+};
+
+class AbstractFactory
+{
+public:
+	void test( )
+	{
+		std::shared_ptr<PizzaStore> nyStore = std::make_shared<NYPizzaStore>();
+		std::shared_ptr<PizzaStore> chicagoStore = std::make_shared<ChPizzaStore>( );
+
+		std::shared_ptr<Pizza> pizza = nyStore->orderPizza("cheese");
+		std::cout << "You have a " + pizza->name << std::endl;
+
+		pizza = chicagoStore->orderPizza("chicago");
+		std::cout << "You have a " + pizza->name << std::endl;
+
 	}
 };
 #endif // !DESIGNPATTERNS_H
