@@ -19,6 +19,9 @@
     <Filter Include="Source Files\Observer">
       <UniqueIdentifier>{3a52e694-c1df-41c3-982b-72047b5239a8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Decorate">
+      <UniqueIdentifier>{2e2c34bc-0361-4802-b551-1bb39acc593c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -63,6 +66,15 @@
     <ClInclude Include="H_Observer.h">
       <Filter>Source Files\Observer</Filter>
     </ClInclude>
+    <ClInclude Include="Decorate.h">
+      <Filter>Source Files\Decorate</Filter>
+    </ClInclude>
+    <ClInclude Include="Beverage.h">
+      <Filter>Source Files\Decorate</Filter>
+    </ClInclude>
+    <ClInclude Include="CondimentDecorator.h">
+      <Filter>Source Files\Decorate</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -71,9 +83,5 @@
     <ClCompile Include="DesignPatterns.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ClassDiagram.cd" />
-    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
 </Project>

@@ -6,9 +6,8 @@
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	Observer_d ob;
-	ob.test( );
-	ob.test2( );
+	Decorator d1;
+	d1.test( );
 	return 0;
 }
 

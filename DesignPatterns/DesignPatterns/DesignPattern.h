@@ -3,6 +3,7 @@
 
 #include "SimUDuck.h"
 #include "H_Observer.h"
+#include "Decorate.h"
 class DesignPattern
 {
 public:
@@ -64,6 +65,31 @@ public:
 		weatherData->setMeasurements(82.0, 70.0, 29.2);
 		weatherData->removeObserver(&currentDisplay);
 		weatherData->setMeasurements(100.0, 100.0, 100.0);
+	}
+};
+
+class Decorator
+{
+public:
+	void test( )
+	{
+		std::cout << "Case 1 " << std::endl;
+		std::shared_ptr<Beverage> beverage = std::make_shared<Espresso>() ;
+		std::cout << beverage->getDescription() + " $" + std::to_string(beverage->cost( )) << std::endl;
+
+		std::cout << "Case 2 " << std::endl;
+		std::shared_ptr<Beverage> beverage2 = std::make_shared<HouseBlend>( );
+		beverage2 = std::make_shared<Mocha>(beverage2);
+		beverage2 = std::make_shared<Mocha>(beverage2);
+		beverage2 = std::make_shared<Whip>(beverage2);
+		std::cout << beverage2->getDescription() + " $" + std::to_string(beverage2->cost( )) << std::endl;
+
+		std::cout << "Case 3 " << std::endl;
+		std::shared_ptr<Beverage> beverage3 = std::make_shared<HouseBlend>( );
+		beverage3 = std::make_shared<Soy>(beverage3);
+		beverage3 = std::make_shared<Mocha>(beverage3);
+		beverage3 = std::make_shared<Whip>(beverage3);
+		std::cout << beverage3->getDescription() + " $" + std::to_string(beverage3->cost( )) << std::endl;
 	}
 };
 #endif // !DESIGNPATTERNS_H

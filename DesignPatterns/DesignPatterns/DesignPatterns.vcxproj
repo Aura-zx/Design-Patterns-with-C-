@@ -79,7 +79,10 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Beverage.h" />
+    <ClInclude Include="CondimentDecorator.h" />
     <ClInclude Include="CurrentConditionsDisplay.h" />
+    <ClInclude Include="Decorate.h" />
     <ClInclude Include="DesignPattern.h" />
     <ClInclude Include="DisplayElement.h" />
     <ClInclude Include="FlyBehavior.h" />
@@ -99,10 +102,6 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ClassDiagram.cd" />
-    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
