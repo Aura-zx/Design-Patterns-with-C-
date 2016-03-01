@@ -1,5 +1,5 @@
 # Design-Patterns-with-C-
-Head First Design Patterns
+Code about 《Head First Design Patterns》
 
 The book use java, I made a c++ version.
 ###1 Strategy  
@@ -18,5 +18,15 @@ The book use java, I made a c++ version.
 >>>StatisticsDisplay.h <br>
 
 ###3 Decorator
+>Decorate.h <br>
 >Beverage.h <br>
 >CondimentDecorator.h <br>
+
+###4 AbstractFactory
+>AbstractFactory.h <br>
+>PizzaStore.h <br>
+>>ChPizzaStore.h <br>
+>>NYPizzaStore.h <br>
+
+>Pizza.h <br>
+>>PizzaStyle.h <br>
