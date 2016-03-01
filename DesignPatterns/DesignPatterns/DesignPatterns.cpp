@@ -6,7 +6,7 @@
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	AbstractFactory a;
+	Factory a;
 	a.test( );
 	return 0;
 }

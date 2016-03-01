@@ -78,9 +78,6 @@
     <ClInclude Include="CondimentDecorator.h">
       <Filter>Source Files\Decorator</Filter>
     </ClInclude>
-    <ClInclude Include="AbstractFactory.h">
-      <Filter>Source Files\AbstractFactory</Filter>
-    </ClInclude>
     <ClInclude Include="Pizza.h">
       <Filter>Source Files\AbstractFactory</Filter>
     </ClInclude>
@@ -94,6 +91,9 @@
       <Filter>Source Files\AbstractFactory</Filter>
     </ClInclude>
     <ClInclude Include="ChPizzaStore.h">
+      <Filter>Source Files\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="Factory.h">
       <Filter>Source Files\AbstractFactory</Filter>
     </ClInclude>
   </ItemGroup>

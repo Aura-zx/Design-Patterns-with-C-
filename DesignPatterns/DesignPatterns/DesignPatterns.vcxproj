@@ -79,7 +79,7 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AbstractFactory.h" />
+    <ClInclude Include="Factory.h" />
     <ClInclude Include="Beverage.h" />
     <ClInclude Include="ChPizzaStore.h" />
     <ClInclude Include="CondimentDecorator.h" />

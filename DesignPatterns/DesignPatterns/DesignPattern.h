@@ -4,7 +4,7 @@
 #include "SimUDuck.h"
 #include "H_Observer.h"
 #include "Decorate.h"
-#include "AbstractFactory.h"
+#include "Factory.h"
 class DesignPattern
 {
 public:
@@ -86,7 +86,7 @@ public:
 	}
 };
 
-class AbstractFactory
+class Factory
 {
 public:
 	void test( )
